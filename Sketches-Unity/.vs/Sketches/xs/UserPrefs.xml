@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{BD44CDDD-DCB9-1DB9-A0FD-54CAF4C45276}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BotMovement.cs">
+    <Files>
+      <File FileName="Assets/Rotation.cs" Line="16" Column="47" />
+      <File FileName="Assets/BotMovement.cs" Line="33" Column="1" />
+      <File FileName="Assets/Collision.cs" Line="15" Column="2" />
+      <File FileName="Assets/Manager.cs" Line="58" Column="79" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="84dc312e-15e0-4192-9d57-d7de72f2032d" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
