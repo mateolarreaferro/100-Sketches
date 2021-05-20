@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{A1013802-6FD8-75C3-3922-68CB2B9530CC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TerrainGenerator.cs">
+    <Files>
+      <File FileName="Assets/MaterialChanger.cs" Line="22" Column="25" />
+      <File FileName="Assets/Scripts/TerrainGenerator.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e8f7a79-8677-45c4-9998-35768265494f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

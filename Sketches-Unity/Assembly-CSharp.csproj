@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BD44CDDD-DCB9-1DB9-A0FD-54CAF4C45276}</ProjectGuid>
+    <ProjectGuid>{A1013802-6FD8-75C3-3922-68CB2B9530CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,13 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AppearDissapear.cs" />
     <Compile Include="Assets\Scripts\AudioReactive.cs" />
+    <Compile Include="Assets\Scripts\BirdBehaviour.cs" />
+    <Compile Include="Assets\Scripts\BirdsManager.cs" />
     <Compile Include="Assets\Scripts\BotMovement.cs" />
     <Compile Include="Assets\Scripts\Collision.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\MaterialChanger.cs" />
+    <Compile Include="Assets\Scripts\MeshGenerator.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\PerlinNoise.cs" />
+    <Compile Include="Assets\Scripts\PositionObjects.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
+    <Compile Include="Assets\Scripts\RotationManager.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\TerrainGenerator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -255,22 +264,22 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.barracuda@1.0.4/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.barracuda@1.0.4/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.burst@1.3.4/Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.burst@1.3.4/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/PackageCache/com.unity.ml-agents@1.0.7/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -633,94 +642,94 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.MacBLAS">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.iOSBLAS">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ML-Agents.CommunicatorObjects">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.BurstBLAS">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ML-Agents.Editor">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ML-Agents">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/mlf/Desktop/Sketches/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/mlf/Desktop/Code Art/100-Sketches/Sketches-Unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
