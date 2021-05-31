@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\BirdBehaviour.cs" />
     <Compile Include="Assets\Scripts\BirdsManager.cs" />
     <Compile Include="Assets\Scripts\BotMovement.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Collision.cs" />
+    <Compile Include="Assets\Scripts\FFTGrandManager.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\MaterialChanger.cs" />
     <Compile Include="Assets\Scripts\MeshGenerator.cs" />

@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{A1013802-6FD8-75C3-3922-68CB2B9530CC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TerrainGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AppearDissapear.cs">
     <Files>
-      <File FileName="Assets/MaterialChanger.cs" Line="22" Column="25" />
-      <File FileName="Assets/Scripts/TerrainGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TerrainGenerator.cs" Line="52" Column="1" />
+      <File FileName="Assets/Scripts/MeshGenerator.cs" />
+      <File FileName="Assets/Scripts/PerlinNoise.cs" />
+      <File FileName="Assets/Scripts/AppearDissapear.cs" Line="1" Column="1" />
+      <File FileName="Assets/FFTGrandManager.cs" />
+      <File FileName="Assets/CameraMovement.cs" Line="16" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e8f7a79-8677-45c4-9998-35768265494f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6eab483c-dedb-40ba-998d-31115aef10b0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
