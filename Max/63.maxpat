@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 551.0, 318.0, 431.0, 446.0 ],
+		"rect" : [ 833.0, 79.0, 404.0, 638.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -126,7 +126,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.0, 450.0, 59.5, 20.0 ],
+					"patching_rect" : [ 211.25, 450.0, 59.5, 20.0 ],
 					"text" : "Scaling"
 				}
 
@@ -960,11 +960,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 390.0, 150.0, 33.0 ],
+					"patching_rect" : [ 315.0, 390.0, 198.0, 20.0 ],
 					"text" : "3 planes because it is a 3d system"
 				}
 
@@ -1059,6 +1058,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1116,6 +1122,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
