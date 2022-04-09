@@ -1,37 +1,36 @@
-/*
- * @name Shader Using Webcam
- * @description The webcam can be passed to shaders as a texture.
- * <br> To learn more about using shaders in p5.js: <a href="https://itp-xstory.github.io/p5js-shaders/">p5.js Shaders</a>
- */
+//const density = "Ñ@#W$9876543210?!abc;:+=-,._                    ";
+const density = 'MateoLarreaFerro.             '
+ //const density = '       .:-i|=+%O#@'
+//const density = '        .:░▒▓█';
+// const density = "SA          "
 
- // this variable will hold our shader object
- let theShader;
- // this variable will hold our webcam video
- let cam;
+let video;
+let asciiDiv;
 
- function preload(){
-   // load the shader
-   theShader = loadShader('assets/webcam.vert', 'assets/webcam.frag');
- }
+function setup() {
+  noCanvas();
+  video = createCapture(VIDEO);
+  video.size(64, 48);
+  asciiDiv = createDiv();
+}
 
- function setup() {
-   // shaders require WEBGL mode to work
-   createCanvas(710, 400, WEBGL);
-   noStroke();
-
-   cam = createCapture(VIDEO);
-   cam.size(710, 400);
-
-   cam.hide();
- }
-
- function draw() {
-   // shader() sets the active shader with our shader
-   shader(theShader);
-
-   // passing cam as a texture
-   theShader.setUniform('tex0', cam);
-
-   // rect gives us some geometry on the screen
-   rect(0,0,width,height);
- }
+function draw() {
+  video.loadPixels();
+  let asciiImage = "";
+  for (let j = 0; j < video.height; j++) {
+    for (let i = 0; i < video.width; i++) {
+      const pixelIndex = (i + j * video.width) * 4;
+      const r = video.pixels[pixelIndex + 0];
+      const g = video.pixels[pixelIndex + 1];
+      const b = video.pixels[pixelIndex + 2];
+      const avg = (r + g + b) / 3;
+      const len = density.length;
+      const charIndex = floor(map(avg, 0, 255, 0, len));
+      const c = density.charAt(charIndex);
+      if (c == " ") asciiImage += "&nbsp;";
+      else asciiImage += c;
+    }
+    asciiImage += '<br/>';
+  }
+  asciiDiv.html(asciiImage);
+}
