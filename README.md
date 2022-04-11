@@ -1,7 +1,7 @@
 # 100 Sketches
  My intention is to make 100 sketches in a year. These are created using p5.js, processing, unity, max(jitter), and vqgan+clip.
  
- If anything, the purpose of this challenge is to learn more about the art of creative coding and the tools that currently available. 
+ If anything, the purpose of this challenge is to learn more about the art of creative coding and the tools that are currently available. 
 
 ## Inspiration/Sources
 A lot of the sketches in this repository were created following tutorials from these channels:
