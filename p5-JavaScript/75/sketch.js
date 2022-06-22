@@ -1,4 +1,4 @@
-// Particle with Image
+// Particle Image
 
 let img;
 let cnv; // canvas
